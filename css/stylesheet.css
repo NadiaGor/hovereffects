@@ -1,0 +1,953 @@
+body {
+	background: #78E5D4;
+	background: -webkit-linear-gradient(top left, #78E5D4, #EFEFCD);
+	background: -o-linear-gradient(top left, #78E5D4, #EFEFCD);
+	background: -moz-linear-gradient(top left, #78E5D4, #EFEFCD);
+	background: linear-gradient(top left, #78E5D4, #EFEFCD);
+}
+
+html {
+	font-size: 22px;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/**************** Navbar *******************/
+
+.navbar {
+	background: #78E5D4;
+	background: -webkit-linear-gradient(bottom, #06858E, #DACED6);  
+	box-shadow: 2px 2px 5px gray;
+	border-radius: 0px;
+	border: 0px;
+}
+
+.navbar-header {
+	padding-left: 30px;
+	width: 200px;
+}
+
+.navbar-header a.navbar-brand {
+	color: white;
+	border: 1px solid white;
+	margin: 10px;
+}
+
+.navbar-header a.navbar-brand:hover {
+	background: rgba(0, 0, 0, 0.3);
+	color: white;
+}
+
+.navbar-right {
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	margin-left: 20px;
+}
+
+.navbar-right .ln {
+ 	border: 1px solid white;
+ 	text-align: center;
+ 	padding: 5px 10px;
+ 	margin-right: 30px;
+ 	margin-top: 10px;
+ 	vertical-align: baseline;
+ 	 	 	 		 }
+
+.ln p.navbar-text {
+ 	color: white;
+ 	font-size: 18px;
+ 	text-decoration: none;
+ 	margin-top: 7px;
+ 	display: inline;
+ 	 }
+
+.ln p.navbar-text:hover {
+	text-decoration: none;
+}
+
+a.navbar-link:hover {
+	text-decoration: none;
+
+}
+
+.ln:hover {
+ 	background: rgba(0, 0, 0, 0.3);
+  }
+
+/**************** Head *******************/
+
+#head-h {
+	text-transform: uppercase;
+	padding: 20px;
+	font-weight: 300;
+	color: white;
+	margin-bottom: 30px;
+		}
+
+h2 {
+	font-weight: 100;
+   	letter-spacing: 2px;
+   	font-size: 20px;
+   	text-transform: uppercase;
+   	color: white;
+}
+
+/* Back to Top */
+
+.b-to-top {
+	width: 70px;
+	background: white;
+	border-radius: 10px;
+	border: 1px solid white;
+	position: fixed;
+	top: 70%;
+	right: 2px;
+	z-index: 500;
+	text-align: center;
+}
+
+.b-to-top p {
+	font-size: 18px;
+}
+
+.b-to-top span, .b-to-top p {
+	color: gray;
+}
+
+.b-to-top span {
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+.b-to-top:hover span, .b-to-top:hover p {
+	color: white;
+}
+
+.b-to-top:hover {
+	background: #06858E;
+
+}
+
+/* classes default styles */
+
+.see-more {
+	font-weight: 100;
+   	letter-spacing: 2px;
+   	font-size: 18px;
+   	text-transform: uppercase;
+   	text-decoration: none;
+   	color: white;
+   	border: 1px solid white;
+   	padding: 10px 20px;
+}
+
+.see-more:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.hovereffect-plain {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	cursor: default;
+	position: relative;
+	margin: 10px;
+}
+
+.overlay-plain {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+
+/*******************************************************************************
+ Hover Effect 1
+*******************************************************************************/
+
+.hovereffect {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	cursor: default;
+	position: relative;
+	margin: 10px;
+	}
+
+.hovereffect .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.hovereffect img {
+	position: relative;
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+	-webkit-filter: grayscale(100%) blur(1px);
+	filter: grayscale(100%) blur(1px);
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2); /* Explorer */
+	-moz-transform: scale(1.2); /* Mozila */
+	transform: scale(1.2);
+
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+   	color: white;
+   	background-color: rgba(0, 0, 0, 0.6);
+   	padding: 15px;
+   	position: relative;
+   	
+}
+
+.hovereffect a.info {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	border: 1px solid white;
+	padding: 10px 20px;
+	margin-top: 20%;
+	display: inline-block;
+	font-weight: 100;
+   	letter-spacing: 2px;
+   	font-size: 16px;
+}
+
+.hovereffect h2, .hovereffect a.info {
+	-webkit-transform: scale(0.7);
+	-ms-transform: scale(0.7); /* Explorer */
+	-moz-transform: scale(0.7); /* Mozila */
+	transform: scale(0.7);
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+	opacity: 0;
+}
+
+.hovereffect a.info:hover {
+	box-shadow: 5px 5px 10px white;
+}
+
+.hovereffect:hover h2, .hovereffect:hover a.info {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1); /* Explorer */
+	-moz-transform: scale(1); /* Mozila */
+	transform: scale(1);
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+	opacity: 1;
+}
+
+
+
+/*******************************************************************************
+ Hover Effect 2
+*******************************************************************************/
+
+.hovereffect1, .hovereffect4 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.hovereffect1 .overlay1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.hovereffect1 img {
+	position: relative;
+	-webkit-filter: grayscale(80%);
+	filter: grayscale(80%);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1); /* Explorer */
+	-moz-transform: scale(1.1); /* Mozila */
+	transform: scale(1.1);
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+}
+
+.hovereffect1:hover img {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1); /* Explorer */
+	-moz-transform: scale(1); /* Mozila */
+	transform: scale(1);
+}
+
+.hovereffect1 h2 {
+	text-transform: uppercase;
+	color: white;
+	font-size: 22px;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	-webkit-transform: translate(0px, 100px);
+	transform: translate(0px, 100px);
+	-webkit-transition: all .5s ease-in;
+	-moz-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+		}
+
+.hovereffect1:hover h2 {
+	-webkit-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px); /* Explorer */
+	-moz-transform: translate(0px, 0px); /* Mozila */
+	transform: translate(0px, 0px);
+}
+
+.hovereffect1 a.info1 {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 16px;
+	border: 1px solid white;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px 20px;
+	display: inline-block;
+	margin-top: 25%;
+	opacity: 0;
+	font-weight: 100;
+   	letter-spacing: 2px;
+   	-webkit-transform: translate(0px, 50px);
+   	-ms-transform: translate(0px, 50px); /* Explorer */
+	-moz-transform: translate(0px, 50px); /* Mozila */ 
+	transform: translate(0px, 50px);
+	-webkit-transition: all .5s ease-in;
+	-moz-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+}
+
+.hovereffect1:hover a.info1 {
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px); /* Explorer */
+	-moz-transform: translate(0px, 0px); /* Mozila */ 
+	opacity: 1;
+}
+.hovereffect1 a.info1:hover {
+	box-shadow: 2px 2px 10px white;
+}
+
+/*******************************************************************************
+ Hover Effect 3
+*******************************************************************************/
+
+.hovereffect2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 10px;
+	overflow: hidden;
+	text-align: center;
+	background: #42b078;
+}
+
+.hovereffect2 .overlay2 {
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	top: 10%;
+	left: 10%;
+	overflow: hidden;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	text-align: center;
+	opacity: 1;
+	 -webkit-transition: all 0.4s;
+	 -moz-transition: all 0.4s;
+  	transition: all 0.4s;
+  	-webkit-transform: scale(0,1);
+   	-ms-transform: scale(0,1); /* Explorer */
+	-moz-transform: scale(0,1); /* Mozila */ 
+  	transform: scale(0,1);
+}
+
+.hovereffect2:hover .overlay2 {
+	opacity: 1;
+	-webkit-transform: scale(1);
+  	-ms-transform: scale(1); /* Explorer */
+  	-moz-transform: scale(1); /* Mozila */ 
+  	transform: scale(1);
+}
+
+.hovereffect2 img {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1); /* Explorer */
+  	-moz-transform: scale(1.1); /* Mozila */ 
+	transform: scale(1.1);
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.hovereffect2:hover img {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1); /* Explorer */
+  	-moz-transform: scale(1); /* Mozila */ 
+	transform: scale(1);
+	-webkit-filter: brightness(0.7);
+	filter: brightness(0.7);
+}
+
+.hovereffect2 h2 {
+	padding-top: 20px;
+}
+
+.hovereffect2 a.info2 {
+	display: inline-block;
+	margin-top: 25%;
+	border: 1px solid white;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: 2px; 
+}
+
+.hovereffect2 a.info2:hover {
+	box-shadow: 1px 1px 5px white;
+}
+
+/*******************************************************************************
+ Hover Effect 4
+*******************************************************************************/
+
+.hovereffect3 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.hovereffect3 .overlay3 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	-webkit-transition: opacity .5s linear;
+	-moz-transition: opacity .5s linear;
+	transition: opacity .5s linear; 
+}
+
+.hovereffect3 .overlay3:hover {
+	opacity: 1;
+}
+
+.hovereffect3 img {
+	opacity: 0.8;
+	-webkit-transition: all .4s ease-in;
+	-moz-transition: all .4s ease-in;
+	transition: all .4s ease-in;
+}
+
+.hovereffect3:hover img {
+	opacity: 1;
+	-webkit-filter: contrast(150%);
+	filter: contrast(150%);
+}
+
+.overlay3 h2 {
+	background: rgba(0, 0, 0, 0.8);
+	padding: 10px;
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5); /* Explorer */
+  	-moz-transform: scale(1.5); /* Mozila */ 
+	transform: scale(1.5);
+	-webkit-transition: all .6s cubic-bezier(0.90,-0.99, 0, 1.90);
+	-moz-transition: all .6s cubic-bezier(0.90,-0.99, 0, 1.90);
+	transition: all .6s cubic-bezier(0.90,-0.99, 0, 1.90);
+}
+
+.overlay3:hover h2 {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1); /* Explorer */
+  	-moz-transform: scale(1); /* Mozila */ 
+	transform: scale(1);
+}
+
+.overlay3 a.info3 {
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: 100;
+	color: white;
+	padding: 10px 20px;
+	border: 1px solid white;
+	border-radius: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3); /* Explorer */
+  	-moz-transform: scale(1.3); /* Mozila */ 
+	transform: scale(1.3);
+	-webkit-transition: -webkit-transform .6s cubic-bezier(0.90,-0.99, 0, 1.90);
+	-moz-transition: -moz-transform .6s cubic-bezier(0.90,-0.99, 0, 1.90);
+	transition: transform .6s cubic-bezier(0.90,-0.99, 0, 1.90);
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.overlay3:hover a.info3 {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1); /* Explorer */
+  	-moz-transform: scale(1); /* Mozila */ 
+	transform: scale(1);
+	} 
+
+.hovereffect3 a.info3:hover {	
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg); /* Explorer */
+  	-moz-transform: rotate(180deg); /* Mozila */ 
+	transform: rotate(180deg);
+	-webkit-transition: -webkit-transform .6s ease-in;
+	-moz-transition: -moz-transform .6s ease-in;
+	transition: transform .6s ease-in;
+	}
+
+/*******************************************************************************
+ Hover Effect 5
+*******************************************************************************/
+
+.hovereffect4 img {
+	-webkit-filter: sepia(100%) opacity(.7);
+	filter: sepia(100%) opacity(.7);
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	}
+
+.hovereffect4:hover img {
+	-webkit-filter: sepia(0%) opacity(1);
+	filter: sepia(0%) opacity(1);
+}
+
+.hovereffect4 .back {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	border: 1px solid white;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1); /* Explorer */
+  	-moz-transform: scale(1); /* Mozila */ 
+	transform: scale(1);
+	opacity: 1;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+.hovereffect4:hover .back {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2); /* Explorer */
+  	-moz-transform: scale(1.2); /* Mozila */ 
+	transform: scale(1.2);
+	opacity: 0;
+
+}
+
+.hovereffect4 .overlay4 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.hovereffect4 h2 {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	margin-top: 5%;
+}
+
+.hovereffect4 a.info4 {
+	display: inline-block;
+	margin-top: 25%;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-weight: 100;
+   	letter-spacing: 2px;
+   	font-size: 18px;
+   	text-transform: uppercase;
+   	text-decoration: none;
+   	color: white;
+   	border: 1px solid white;
+   	padding: 10px 20px;
+}
+
+.hovereffect4:hover a.info4 {
+	background-color: rgba(0, 0, 0, 0.6);
+	}
+
+.hovereffect4 a.info4:hover {
+	box-shadow: 0px 0px 5px #DACED6;
+}
+
+/*******************************************************************************
+ Hover Effect 6
+*******************************************************************************/
+
+.hovereffect5 .back-blue {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.hovereffect5:hover .back-blue {
+	background: #8AF8FF;
+	opacity: .3;
+}
+
+.hovereffect5 .overlay5 h2 {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+}
+
+.hovereffect5 a.info5 {
+	display: inline-block;
+	margin-top: 70px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hovereffect5 .overlay5 {
+	-webkit-transform: matrix(0.5, 0, 0, 0.5, 100, 100);
+	-ms-transform: matrix(0.5, 0, 0, 0.5, 100, 100); /* Explorer */
+  	-moz-transform: matrix(0.5, 0, 0, 0.5, 100, 100); /* Mozila */ 
+	transform: matrix(0.5, 0, 0, 0.5, 100, 100);
+	opacity: 0;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+.hovereffect5:hover .overlay5 {
+	opacity: 1;
+	-webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+	-ms-transform: matrix(1, 0, 0, 1, 0, 0);
+	-moz-transform: matrix(1, 0, 0, 1, 0, 0);
+	transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.overlay5 a.info5:hover {
+	box-shadow: 0px 0px 5px black;
+}
+
+/*******************************************************************************
+ Hover Effect 7
+*******************************************************************************/
+
+.hovereffect6 img {
+	-webkit-filter: saturate(3);
+	filter: saturate(3);
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+
+.hovereffect6:hover img {
+	-webkit-filter: saturate(1);
+	filter: saturate(1);
+	}
+
+
+.overlay6 a.info6 {
+	display: inline-block;
+	margin-top: 40px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay6 h2 {
+	margin-top: 50px;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+}
+
+
+.hovereffect6 .overlay6 {
+	-webkit-transform: rotate(90deg) translate(300px, -100px);
+	-ms-transform: rotate(90deg) translate(300px, -100px);
+	-moz-transform: rotate(90deg) translate(300px, -100px);
+	transform: rotate(90deg) translate(300px, -100px);
+	-webkit-transition: all .5s cubic-bezier(0.9,-0.9, 0, 1.9);
+	-moz-transition: all .5s cubic-bezier(0.9,-0.9, 0, 1.9);
+	transition: all .5s cubic-bezier(0.9,-0.9, 0, 1.9);
+	opacity: 0;
+}
+
+.hovereffect6:hover .overlay6 {
+	-webkit-transform: rotate(0deg) translate(0px, 0px);
+	-ms-transform: rotate(0deg) translate(0px, 0px);
+	-moz-transform: rotate(0deg) translate(0px, 0px);
+	transform: rotate(0deg) translate(0px, 0px);
+	opacity: 1;
+}
+
+.hovereffect6 a.info6:hover {
+	box-shadow: 0px 0px 5px white;
+}
+
+/*******************************************************************************
+ Hover Effect 8
+*******************************************************************************/
+
+.hovereffect7 img {
+	-webkit-filter: brightness(1.2);
+	filter: brightness(1.2);
+	-webkit-transition: all .4s ease-in;
+	-moz-transition: all .4s ease-in;
+	transition: all .4s ease-in;
+}
+
+.hovereffect7:hover img {
+	-webkit-filter: brightness(.7);
+	filter: brightness(.7);
+}
+
+.hovereffect7 .line-top {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+	border-top: 1px solid white;
+	-webkit-transform: translate(400px, 0px);
+	-ms-transform: translate(400px, 0px);
+	-moz-transform: translate(400px, 0px);
+	transform: translate(400px, 0px);
+	-webkit-transition: all .4s ease-in;
+	-moz-transition: all .4s ease-in;
+	transition: all .4s ease-in;
+}
+
+.hovereffect7:hover .line-top {
+	-webkit-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
+.hovereffect7 .line-bottom {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+	border-bottom: 1px solid white;
+	-webkit-transform: translate(-400px, 0px);
+	-ms-transform: translate(-400px, 0px);
+	-moz-transform: translate(-400px, 0px);
+	transform: translate(-400px, 0px);
+	-webkit-transition: all .4s ease-in;
+	-moz-transition: all .4s ease-in;
+	transition: all .4s ease-in;
+}
+
+.hovereffect7:hover .line-bottom {
+	-webkit-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
+.hovereffect7 h2 {
+	-webkit-transform: translate(0px, -300px);
+	-ms-transform: translate(0px, -300px);
+	-moz-transform: translate(0px, -300px);
+	transform: translate(0px, -300px);
+	-webkit-transition: all .6s ease-in;
+	-moz-transition: all .6s ease-in;
+	transition: all .6s ease-in;
+	margin-top: 40px;
+
+}
+
+.hovereffect7:hover h2 {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
+.hovereffect7 a.info7 {
+	display: inline-block;
+	margin-top: 50px;
+	-webkit-transform: translate(0px, 300px);
+	-ms-transform: translate(0px, 300px);
+	-moz-transform: translate(0px, 300px);
+	transform: translate(0px, 300px);
+	-webkit-transition: -webkit-transform .8s ease-in;
+	-moz-transition: -moz-transform .8s ease-in;
+	transition: transform .8s ease-in;
+}
+
+.hovereffect7:hover a.info7 {
+	-webkit-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
+ .hovereffect7 a.info7:hover {
+	box-shadow: 0px 0px 5px white;
+}
+
+
+/*******************************************************************************
+ Hover Effect 9
+*******************************************************************************/
+
+.hovereffect8 img {
+	-webkit-filter: brightness(90%) contrast(90%);
+	filter: brightness(90%) contrast(90%);
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+.hovereffect8:hover img {
+	-webkit-filter: brightness(110%) contrast(110%);
+	filter: brightness(110%) contrast(110%);
+}
+
+.hovereffect8 h2 {
+	margin-top: 10px;
+	font-weight: 200;
+}
+
+.hovereffect8 .circle {
+	position: absolute;
+	width: 60%;
+	height: 80%;
+	bottom: 5%;
+	left: 20%;
+	border: 1px solid white;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.3);
+	-webkit-transform: translate(300px, -300px);
+	-ms-transform: translate(300px, -300px);
+	-moz-transform: translate(300px, -300px);
+	transform: translate(300px, -300px);
+	-webkit-transition: -webkit-transform .3s ease-in;
+	-moz-transition: -moz-transform .3s ease-in;
+	transition: transform .3s ease-in;
+}
+
+.hovereffect8:hover .circle {
+	-webkit-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
+.hovereffect8 .circle:hover {
+	box-shadow: 0px 0px 5px white;
+}
+
+.circle a.info8 {
+	border: none;
+	display: inline-block;
+	margin-top: 35%;
+}
+
+.circle a.info8:hover {
+	text-shadow: 1px 1px 10px white;
+}
+
+
+/*********************** XS Devices **********************/
+
+ @media (max-width: 767px) {
+
+.hovereffect, .hovereffect1, .hovereffect2, 
+.hovereffect3, .hovereffect4, .hovereffect5, 
+.hovereffect6, .hovereffect7, .hovereffect8,
+.hovereffect9 {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar-right .ln {
+	margin-right: 0px;
+}
+
+.navbar-header {
+	padding-left: 10px;
+}
+
+#head-h {
+	font-size: 1.8em;
+	margin: 0px;
+}
+}
+
+/*********************** Super XS Devices **********************/
+
+ @media (max-width: 650px) {
+
+.hovereffect-plain, .hovereffect, .hovereffect1, .hovereffect2, 
+.hovereffect3, .hovereffect4, .hovereffect5, 
+.hovereffect6, .hovereffect7, .hovereffect8,
+.hovereffect9 {
+	width: 80%;
+	}
+
+.hovereffect a.info, .hovereffect1 a.info1,
+.hovereffect7 a.info7
+ {
+	margin-top: 10%;
+}
+
+.hovereffect2 a.info2, .hovereffect6 a.info6 {
+	margin-top: 5%;
+}
+
+.hovereffect3 a.info3, .hovereffect4 a.info4, 
+.hovereffect5 a.info5 {
+	margin-top: 15%;
+}
+}
+
+
