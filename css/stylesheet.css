@@ -4,6 +4,9 @@ body {
 	background: -o-linear-gradient(top left, #78E5D4, #EFEFCD);
 	background: -moz-linear-gradient(top left, #78E5D4, #EFEFCD);
 	background: linear-gradient(top left, #78E5D4, #EFEFCD);
+	max-width: 1400px;
+    	margin-left: auto;
+    	margin-right: auto;
 }
 
 html {
